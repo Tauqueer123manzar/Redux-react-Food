@@ -1,0 +1,19 @@
+.cardbox .card-body {
+    /* Set initial opacity to 0 */
+    opacity: 0;
+    /* Apply animation */
+    animation: fadeIn 0.8s ease forwards;
+  }
+  
+  /* Define the fadeIn animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Optional: Slide from bottom */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(1);
+    }
+  }
+  
