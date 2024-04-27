@@ -2,8 +2,10 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 // import CardDetail from './CardDetail';
+import { Link } from 'react-router-dom';
 import Cardsdata from './Carddata';
 import './Cards.css'
+import CardDetail from './CardDetail';
 const Cards = () => {
   return (
     <div className='container mt-3'>
@@ -20,7 +22,8 @@ const Cards = () => {
                     <Card.Text>
                     Price : ₹ {element.price}
                     </Card.Text>
-                    <Button variant="primary" className='col-lg-12'>Add to Cart</Button>
+                    <Button variant="primary" className='col-lg-12'>
+                    <Link to="/cart" className='text-white text-decoration-none'>Add to Cart</Link></Button>
                   </Card.Body>
                 </Card>
               </>
