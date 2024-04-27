@@ -1,9 +1,33 @@
 import React from 'react'
-
+import './CardDetail.css'
 const CardDetail = () => {
   return (
-    <div>
-      <h1>Card Detail</h1>
+    <div className='container mt-3'>
+      <h2 className='text-center'>Items Details Page</h2>
+    <section className='container mt-3'>
+      <div className='Imagedetail d-flex border'>
+      <div className='items-img'>
+        <img src='https://b.zmtcdn.com/data/pictures/chains/5/19295245/089cbcf1d3307542c72f77272556b28b_o2_featured_v2.jpg?output-format=webp' style={{height: "90%", maxWidth: "100%" }} alt='missing image'></img>
+      </div>
+      <div className='item-detail'>
+      <table>
+      <tr>
+        <td>
+          <p className='mt-1' style={{marginLeft:"20px"}}><strong>Resturant :</strong> Massala <span>Theoryy</span></p>
+          <p className='mt-4' style={{marginLeft:"20px"}}><strong>Price :</strong>  ₹ <span>300</span></p>
+          <p className='mt-4' style={{marginLeft:"20px"}}><strong>Dishes :</strong><span>North Indian,<br></br></span>Biryani ,Mughali</p>
+          <p className='mt-4' style={{marginLeft:"20px"}}><strong>Total :</strong><span>₹ </span>300</p>
+        </td>
+        <td>
+          <p className='mt-4'><strong>Rating :</strong><span style={{backgroundColor:"green",color:"white",padding:"2px 4px",borderRadius:"2px"}}>3.5 *</span></p>
+          <p className='mt-2'><strong>Order Review :</strong><span>1175 + <br></br></span>Order placed from here recently</p>
+          <p className='mt-4'><strong>Remove : </strong><span style={{color:"red"}}><i class="fa-solid fa-trash"></i></span></p>
+        </td>
+      </tr>
+      </table>
+      </div>
+      </div>
+    </section>
     </div>
   )
 }
