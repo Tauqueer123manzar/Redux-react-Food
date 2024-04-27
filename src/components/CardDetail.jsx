@@ -5,9 +5,9 @@ const CardDetail = () => {
     <div className='container mt-3'>
       <h2 className='text-center'>Items Details Page</h2>
     <section className='container mt-3'>
-      <div className='Imagedetail d-flex border'>
+      <div className='Imagedetail d-flex border shadow'>
       <div className='items-img'>
-        <img src='https://b.zmtcdn.com/data/pictures/chains/5/19295245/089cbcf1d3307542c72f77272556b28b_o2_featured_v2.jpg?output-format=webp' style={{height: "90%", maxWidth: "100%" }} alt='missing image'></img>
+        <img src='https://b.zmtcdn.com/data/pictures/chains/5/19295245/089cbcf1d3307542c72f77272556b28b_o2_featured_v2.jpg?output-format=webp' style={{height: "80%", maxWidth: "100%" }} alt='missing image'></img>
       </div>
       <div className='item-detail'>
       <table>
@@ -21,7 +21,7 @@ const CardDetail = () => {
         <td>
           <p className='mt-4'><strong>Rating :</strong><span style={{backgroundColor:"green",color:"white",padding:"2px 4px",borderRadius:"2px"}}>3.5 *</span></p>
           <p className='mt-2'><strong>Order Review :</strong><span>1175 + <br></br></span>Order placed from here recently</p>
-          <p className='mt-4'><strong>Remove : </strong><span style={{color:"red"}}><i class="fa-solid fa-trash"></i></span></p>
+          <p className='mt-4'><strong>Remove : </strong><span style={{color:"red",fontSize:"20px"}}><i class="fa-solid fa-trash"></i></span></p>
         </td>
       </tr>
       </table>
