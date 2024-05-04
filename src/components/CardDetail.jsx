@@ -19,7 +19,7 @@ const CardDetail = () => {
           <p className='mt-4' style={{marginLeft:"20px"}}><strong>Total :</strong><span>₹ </span>300</p>
         </td>
         <td>
-          <p className='mt-4'><strong>Rating :</strong><span style={{backgroundColor:"green",color:"white",padding:"2px 4px",borderRadius:"2px"}}>3.5 *</span></p>
+          <p className='mt-4'><strong>Rating :</strong><span style={{backgroundColor:"green",color:"white",padding:"2px 4px",borderRadius:"4px"}}>3.5 *</span></p>
           <p className='mt-2'><strong>Order Review :</strong><span>1175 + <br></br></span>Order placed from here recently</p>
           <p className='mt-4'><strong>Remove : </strong><span style={{color:"red",fontSize:"20px"}}><i class="fa-solid fa-trash"></i></span></p>
         </td>

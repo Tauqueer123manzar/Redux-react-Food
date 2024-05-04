@@ -1,0 +1,22 @@
+.landing-page {
+    background-image: url(../assets/zomato.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+  }
+
+  .input-group {
+    margin-top: 30px;
+  }
+  
+  /* .input-group input {
+    border-radius: 20px;
+  } */
+  
+  .input-group-append button {
+    height: auto;
+    margin-left: 2px;
+  }
+  
