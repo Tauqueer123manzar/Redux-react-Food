@@ -1,8 +1,12 @@
-.cardbox .card-body {
+.cardbox {
     /* Set initial opacity to 0 */
-    opacity: 0;
     /* Apply animation */
-    animation: fadeIn 0.8s ease forwards;
+    cursor: pointer;
+  }
+  .cardbox:hover{
+    transform: scaleX(1.0);
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 0px 2px 4px rgba(226, 224, 224, 0.963);
   }
   
   /* Define the fadeIn animation */

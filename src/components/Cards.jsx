@@ -1,18 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 // import CardDetail from './CardDetail';
 import { Link } from 'react-router-dom';
 import Cardsdata from './Carddata';
 import './Cards.css'
+import { useDispatch } from 'react-redux';
+import {ADD} from '../redux/actions/action';
 import CardDetail from './CardDetail';
 const Cards = () => {
+
+  const[data,setData]=useState(Cardsdata);
+  console.log("data",data);
+
+  const dispatch=useDispatch();
+  
+  const send=(e)=>{
+     dispatch(ADD(e));
+  }
   return (
     <div className='container mt-3'>
       <h2 className='text-center'>Add to cart Projects</h2>
       <div className='row d-flex justify-content-center align-items-center'>
         {
-          Cardsdata.map(element => {
+          data.map(element => {
             return (
               <>
                 <Card style={{ width: '22rem',border:"none"}} key={element.id} className='cardbox mx-2 my-2'>
@@ -22,8 +33,7 @@ const Cards = () => {
                     <Card.Text>
                     Price : ₹ {element.price}
                     </Card.Text>
-                    <Button variant="primary" className='col-lg-12'>
-                    <Link to="/cart" className='text-white text-decoration-none'>Add to Cart</Link></Button>
+                    <Button variant="primary" onClick={()=> send(element)} className='col-lg-12'>Add to Cart</Button>
                   </Card.Body>
                 </Card>
               </>

@@ -1,9 +1,6 @@
-import {createStore} from "redux"
-import rooterd from "./redux/reducers/main"
+import { createStore } from 'redux';
+import rootReducer from './redux/reducers/main';
 
-const store= createStore(
-    rooterd
-);
+const store = createStore(rootReducer);
 
 export default store;
-
